@@ -1,0 +1,21 @@
+{
+  "name": "veracodecommunitysast",
+  "version": "0.0.1",
+  "description": "Veracode Community SAST extension for Azure DevOps build and release pipelines.",
+  "main": "sastscan.js",
+  "scripts": {
+    "build": "tsc buildAndReleaseTask/sastscan.ts",
+    "start": "node buildAndReleaseTask/sastscan.js",
+    "build:start": "npm run build && node buildAndReleaseTask/sastscan.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^3.0.3-preview",
+    "azure-pipelines-tool-lib": "^0.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.0",
+    "@types/q": "^1.5.4"
+  }
+}

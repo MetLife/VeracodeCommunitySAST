@@ -1,0 +1,65 @@
+{
+    "manifestVersion": 1,
+    "id": "VeracodeCommunitySAST",
+    "name": "Veracode Community SAST Azure DevOps Extension",
+    "version": "0.0.1",
+    "publisher": "JoeGatt",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Veracode Community SAST Azure DevOps Extension",
+    "tags": [
+        "Azure Pipelines",
+        "Azure DevOps Extensions",
+        "Security",
+        "SAST"
+    ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "links": {
+        "support": {
+            "uri": "mailto:gattjoseph@hotmail.com"
+        },
+        "issues": {
+            "uri": "https://github.com/MetLife/VeracodeCommunitySAST/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/MetLife/VeracodeCommunitySAST"
+    },
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        },
+        {
+            "path": "images", "addressable": true
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}
