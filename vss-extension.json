@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "VeracodeCommunitySAST",
     "name": "Veracode Community SAST Azure DevOps Extension",
-    "version": "0.0.1",
-    "publisher": "JoeGatt",
+    "version": "1.0.2",
+    "publisher": "gattjoe",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
