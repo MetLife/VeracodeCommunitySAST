@@ -114,7 +114,7 @@ async function run(): Promise<void> {
             await python3.exec();
             tl.setResult(tl.TaskResult.Succeeded, 'Successfully installed junitparser.');
 
-        } catch (err) {
+        } catch (err: any) {
             // There was an issue
             tl.setResult(tl.TaskResult.Failed, err.message);
         }
@@ -133,7 +133,7 @@ async function run(): Promise<void> {
 
         return;
 
-    } catch (err) {
+    } catch (err: any) {
 
         tl.setResult(tl.TaskResult.Failed, err.message);
 
@@ -185,7 +185,7 @@ async function prepareScanTarget(scanTarget: string): Promise<string> {
             throw new Error('Invalid scan target.');
         }
 
-    } catch (err) {
+    } catch (err: any) {
 
         throw new Error(err);
 
@@ -219,7 +219,7 @@ async function downloadVeracodeSast(): Promise<string> {
 
         }
 
-    } catch (err) {
+    } catch (err: any) {
         // There was an issue
         tl.setResult(tl.TaskResult.Failed, err.message);
 
@@ -318,7 +318,7 @@ async function runScan(toolExtract: string,
             return;
         }
 
-    } catch (err) {
+    } catch (err: any) {
         throw new Error(err);
 
     }
