@@ -9,3 +9,4 @@
 # v1.0.3
 - Update size check from 100MB > 200MB
 - Version up all package dependencies
+- Explicitly set catch variables to any, which was the default typescript <= 4.3
