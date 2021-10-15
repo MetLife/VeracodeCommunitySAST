@@ -5,3 +5,7 @@
 
 # v1.0.2
 - Wrap failure into an array so it is iterable
+
+# v1.0.3
+- Update size check from 100MB > 200MB
+- Version up all package dependencies
